@@ -1,0 +1,18 @@
+meta {
+  name: create card
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:8080/categories/1/cards
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "term": "apple",
+    "definition": "jabłko"
+  }
+}
